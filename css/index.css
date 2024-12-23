@@ -1,8 +1,21 @@
 body {
-    padding: 100px;
-    margin: 100px;
-    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth; /* Faz a rolagem ser suave */
+}
+
+.about {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.container {
+    display: flex; /* Divide em duas colunas */
+    justify-content: space-between;
+    padding: 50px;
+    margin-left: 150px;
 }
 
 ul {
@@ -14,10 +27,6 @@ ul {
 .icons {
     font-size: 30px;
     color: gray;
-}
-
-ul.links {
-    display: inline; /* Comportamento padrão (bloco) */
 }
 
 ul.icons {
@@ -45,8 +54,28 @@ img {
 
 }
 
-.testes:hover {
+.left-column {
+    
+    width: 40%; /* A parte onde vai ficar o conteúdo principal */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.right-column {
+    width: 50%; /* A parte onde fica a paginação */
+    padding: 20px;
+    padding-right: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testes {
+    margin-top: 10px;
+}
+
+.hover-about:hover {
+    color: green;
     
 }
 
