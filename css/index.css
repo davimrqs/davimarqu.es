@@ -25,7 +25,7 @@ html {
 }
 
 .lado-esquerdo {
-    
+
 }
 .retangulo:hover{
     background-color: red;
@@ -94,13 +94,17 @@ img {
     
 }
 
+img {
+    transition: transform 0.3s ease;
+}
+
 img:hover{
     transform: scale(1.1);
-    transition: all 0.3s ease;
 }
 .about-me-text {
     color: grey;
     font-size: 17px;
+    font
 }
 h2 {
     font-size: 1.25rem;
