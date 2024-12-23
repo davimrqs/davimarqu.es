@@ -1,0 +1,73 @@
+body {
+    padding: 100px;
+    margin: 100px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    justify-content: space-between;
+}
+
+.icons {
+    font-size: 30px;
+    color: gray;
+}
+
+ul.links {
+    display: inline; /* Comportamento padrão (bloco) */
+}
+
+ul.icons {
+    display: flex;
+    justify-content: flex-start; /* Centraliza os ícones horizontalmente */
+    gap: 10px; /* Adiciona espaço fixo entre os ícones */
+    padding: 0;
+    margin: 0;
+}
+
+.test {
+    font-size: 40px; /* Tamanho dos ícones */
+    margin: 0 1px; /* Espaçamento entre os ícones */
+    color: #0077b5; /* Cor do ícone */
+}
+
+h1, h2 {
+    margin-bottom: 1px; /* Ajuste o valor conforme necessário */
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 0; /* Remove o espaço adicional acima do h2 */
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.icons {
+    margin-top: 10px;
+    font-size: 30px;
+    color: gray;
+}
+
+.titleandsubtitle {
+
+    color: white;
+}
