@@ -3,10 +3,6 @@ body {
     background-color: black;
 }
 
-html {
-    scroll-behavior: smooth; /* Faz a rolagem ser suave */
-}
-
 .about {
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -51,7 +47,7 @@ img {
     height: 200px;
     width: 200px;
     border-radius: 100px;
-
+    margin-bottom: 50px;
 }
 
 .left-column {
@@ -65,7 +61,7 @@ img {
 .right-column {
     width: 50%; /* A parte onde fica a paginação */
     padding: 20px;
-    padding-right: 200px;
+    padding-right: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
