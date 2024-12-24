@@ -2,6 +2,15 @@ body {
     background-color: black;
 }
 
+a {
+    color: gray;
+}
+
+a:focus, a:hover {
+    outline: none; /* Remove a borda azul ao focar ou passar o mouse */
+    text-decoration: none; /* Garante que o sublinhado não reapareça */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -13,12 +22,7 @@ html {
     margin-top: 5rem;
     margin-bottom: 2rem;
 }
-.container {
-    display: flex; /* Divide em duas colunas */
-    justify-content: space-between;
-    padding: 50px;
-    margin-left: 150px;
-}
+
 .retangulo {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -75,21 +79,40 @@ img {
     margin-bottom: 50px;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaço fixo entre as colunas */
+    padding: 20px; /* Ajuste o valor conforme necessário */
+    margin: 0 auto; /* Centraliza o container */
+    max-width: 1200px; /* Limita a largura máxima */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
 .left-column {
-    
-    width: 40%; /* A parte onde vai ficar o conteúdo principal */
-    padding: 40px;
+    position: fixed; /* Faz o elemento fique fixo em relação à janela do navegador */
+    top: 0; /* Define a distância do topo da janela */
+    left: 250px; /* Define a distância da borda esquerda da janela do navegador */
+    width: 300px; /* Define a largura da coluna esquerda */
+    height: calc(100% - 40px); /* Ajusta a altura total com margem */
+    margin-top: 20px; /* Espaço do topo */
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #000; /* Preserva o fundo */
+    z-index: 10; /* Mantém a coluna acima de outros elementos */
 }
 
 .right-column {
-    width: 50%; /* A parte onde fica a paginação */
+    margin-left: 400px; /* Move a coluna direita para esquerda (distância relativa à coluna fixa) */
+    margin-right: 30px; /* Cria espaço entre a borda direita da coluna direita e a borda da jane */
+    width: calc(100% - 450px); /* Ajusta a largura restante */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
     padding: 20px;
-    padding-right: 50px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .testes {
     margin-top: 10px;
@@ -123,11 +146,6 @@ h2 {
     font-size: 1.25rem;
     line-height: 1.75rem;
     margin-top: 0; /* Remove o espaço adicional acima do h2 */
-}
-
-a {
-    color: gray;
-    text-decoration: none;
 }
 
 .icons {
