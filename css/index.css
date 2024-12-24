@@ -72,11 +72,17 @@ h1, h2 {
     margin-bottom: 1px; /* Ajuste o valor conforme necessário */
 }
 
-img {
+.personal-photo {
     height: 200px;
     width: 200px;
     border-radius: 100px;
     margin-bottom: 50px;
+    transition: transform 0.3s ease;
+}
+
+.img2 {
+    height: 100px;
+    width: 150px;
 }
 
 .container {
@@ -100,7 +106,6 @@ img {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #000; /* Preserva o fundo */
-    z-index: 10; /* Mantém a coluna acima de outros elementos */
 }
 
 .right-column {
@@ -130,11 +135,7 @@ img {
     
 }
 
-img {
-    transition: transform 0.3s ease;
-}
-
-img:hover{
+.personal-photo:hover{
     transform: scale(1.1);
 }
 .about-me-text {
